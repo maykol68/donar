@@ -6,6 +6,7 @@
 <% if current_user %>
     <p>Hello <%= current_user.email %>!</p>
     <p> You are a [<%= current_user.role %>]
+    <button><%= link_to "Donate", checkout_path%></button>
     <% if current_user.admin?%>
     <br />
         there are <%user.count%> users in the system.
